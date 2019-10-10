@@ -2,8 +2,8 @@
   "label": "Sunburst Visualization",
   "category_label": "Plug-ins",
   "branding": {
-    "image_uri": "https://wwwstatic-a.lookercdn.com/blocks/logos/aws.png",
-    "tagline": "Sunburst diagrams display hierarchical data in a nested structure."
+    "image_uri": "https://looker.com/assets/img/images/blocks/screenshots/viz/sunburst/sunburst.gif",
+    "tagline": "Sunburst charts are a visually appealing way to showcase hierarchical data structures."
   },
 
     "constants": {
