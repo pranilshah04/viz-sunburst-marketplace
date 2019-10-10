@@ -1,0 +1,20 @@
+{
+  "label": "Sunburst Visualization",
+  "category_label": "Plug-ins",
+  "branding": {
+    "image_uri": "https://wwwstatic-a.lookercdn.com/blocks/logos/aws.png",
+    "tagline": "Sunburst diagrams display hierarchical data in a nested structure."
+  },
+
+    "constants": {
+        "VIZ_LABEL": {
+            "label": "Visualization Label",
+            "description": "This label will appear in the visualization selector in the Looker Explore UI."
+        },
+        "VIZ_ID": {
+            "label": "Visualization ID",
+            "description": "This ID must be unique across all custom visualizations on your instance.",
+            "value_constraint": "visualization"
+        }
+    }
+}
