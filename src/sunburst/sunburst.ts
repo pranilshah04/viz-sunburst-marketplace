@@ -117,7 +117,7 @@ const vis: SunburstVisualization = {
     },
     show_percent: {
       type: 'boolean',
-      label: 'Show Percent of Total',
+      label: 'Percent on Hover',
       default: true
     },
   },
