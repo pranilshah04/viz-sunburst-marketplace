@@ -2,14 +2,50 @@
 
 This diagram creates a [sunburst](https://en.wikipedia.org/wiki/Pie_chart#Ring_chart_.2F_Sunburst_chart_.2F_Multilevel_pie_chart) to display hierarchical data in a nested structure.
 
-**How it works**
+### What if I find an error? Suggestions for improvements?
+Great! Marketplace content -- including visualizations -- were designed for continuous improvement through the help of the entire Looker community and we'd love your input. To report an error or improvement recommendation, please reach out to Looker support via email to support@looker.com or via chat to submit a request. Please be as detailed as possible in your explanation and we'll address it as quick as we can.
 
-Create a Look with any number of dimensions and exactly one measure.
 
-For example, in the sunburst featured above, you can see event counts by the hierarchical sequence of events.
+### Interested in extending the visualization for your own use case?
+#### Quickstart Dev Instructions
+1.  **Install Dependecies.**
 
-**More Info**
+    Using yarn, install all dependencies
+    ```
+    yarn
+    ```
+2. **Make changes to the source code**
 
-The sunburst chart is represented by one or more complete and partial circles, or rings. The inner-most ring is always complete. Subsequent rings can be complete or fragmented, depending on the presence of data within the first rings’ categories. For example, the first ring may have three categories: completed orders, returned orders, and incomplete orders. On a given day the second ring may include data for both the returned and completed orders, but no data for incomplete orders. The second ring would then be fragmented, represented by a missing section over the first part of the ring representing incomplete orders.
+    Source code can be found in:
+    ```
+    ./src/sunburst/sunburst.ts
+    ```
 
-The sunburst visualization is meant to display data across two or more dimensions. Similar to a collapsible tree, it is best used when comparing data across increasing levels of granularity. There is no limit to the number of dimensions that can be used, but the graph becomes difficult to understand and trace with an overabundance of dimensions. The same issues arise with overly granular data. One category in the first ring that has 50 subcategories associated with it will be difficult to read.
+3.  **Compile your code**
+
+    You need to compile your typescript. Let's run:
+    ```
+    yarn build
+    ```
+    Recommended: Webpack can detect changes and build automatically
+     ```
+    yarn watch
+    ```
+    Your compiled code can be found in this directory as: `./sunburst.js`
+
+**`sunburst.js`**: This visualization's minified distribution file. 
+
+**`LICENSE`**: Looker's Marketplace content License file.
+
+**`manifest.lkml`**: Looker's external dependencies configuration file. The visualization object is defined here.
+
+**`marketplace.json`**: A JSON file containing information the marketplace installer uses to set up this project.
+
+**`/src`**: This directory will contain all of the visualization's source code.
+
+**`README.md`**: This! A text file containing useful reference information about this visualization.
+
+**`yarn.lock`**: [Yarn](https://yarnpkg.com/) is a package manager alternative to npm. This file serves essentially the same purpose as `package-lock.json`, just for a different package management system.
+
+**`tsconfig.json`**: A configuration file for the typescript -> javascript compiler.
+

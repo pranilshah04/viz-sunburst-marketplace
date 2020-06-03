@@ -12,6 +12,6 @@ constant: VIS_ID {
 
 visualization: {
   id: "@{VIS_ID}"
-  url: "https://looker-custom-viz-a.lookercdn.com/master/sunburst.js"
+  file: "sunburst.js"
   label: "@{VIS_LABEL}"
 }
