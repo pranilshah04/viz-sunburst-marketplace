@@ -12,6 +12,6 @@ constant: VIS_ID {
 
 visualization: {
   id: "@{VIS_ID}"
-  file: "sunburst.js"
+  url: "https://marketplace-api.looker.com/viz-dist/sunburst.js"
   label: "@{VIS_LABEL}"
 }
