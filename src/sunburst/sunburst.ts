@@ -308,6 +308,7 @@ const vis: SunburstVisualization = {
         links: d.data.links,
         event: event
       })
+LookerCharts.Utils.toggleCrossfilter({row, pivot, event})
     })
     .on('mouseenter', (d: any) => {
       var sequence = getAncestors(d)
